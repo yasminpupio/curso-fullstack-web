@@ -8,3 +8,4 @@ Repositório com meus estudos e projetos do curso **Full Stack** do Matheus Frag
 
 ## Módulos
 1. [HTML](./01-html)
+2. [CSS](./02-css/)

@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    background-color: #121212;
+    width: 700px;
+    color: #FFFFFF;
+
+    /* > Margin: espaçamento externo */
+    margin: 50px;
+
+    /* > Padding: espaçamento interno*/
+    padding: 30px;
+
+    /* > Border: borda */
+    border: 5px solid red;
+    border-radius: 10px;
+}

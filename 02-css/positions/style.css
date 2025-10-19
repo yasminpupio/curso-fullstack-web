@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 180vh;
+}
+
+.container {
+    background-color: #121212;
+    width: 700px;
+    color: #FFFFFF;
+    margin: auto;
+    padding: 50px;
+    border: 5px solid red;
+    border-radius: 10px;
+    position: static;
+}
+
+/*
+ > 1. Por padrão temos o static, ou seja estático.
+
+ > 2. Relative elemento é poscionado em relação da sua posição normal.
+   (top, bottom, left, right) -> podemos manipular. 
+   
+ > 3. Absolute: é posicionado em relação ao seu elemento pai mais próximo que possui
+   relative, se não tiver relative é posicionado em relação ao body.   
+
+ > 4. Fixed: é posicionado em relação ao viewport (é a área no browser onde aparece seu site)
+   sempre fica na mesma posição mesmo se a página tem scroll.
+ 
+ > 5. Sticky: é posicionado em relação do scroll.  
+*/
+
+header {
+    background-color: cyan;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+}
+
+.area {
+    position: relative;
+    top: 150px; /*relative*/
+    left: 90px; /*relative*/
+
+    width: 650px;
+    height: 500px;
+    border: 5px solid green;
+}
+
+.area-absolute {
+    position: absolute;
+    bottom: 0; /*absolute*/
+    right: 0; /*absolute*/
+    
+    border: 5px solid blue;
+}
+
+.area-fixed {
+    width: 200px;
+    height: 80px;
+    background-color: green;
+
+    position: fixed;
+    bottom: 50px; /*fixed*/
+    right: 80px; /*fixed*/
+}
+

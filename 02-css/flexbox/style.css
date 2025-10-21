@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    
+    /*reset*/
+    margin: 0; 
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 180vh;
+}
+
+.container {
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+    /*Ativando flexbox no container*/
+    display: flex;
+    flex-direction: row;
+
+    /*justify-content -> sempre ao componente que tem o flex, e não aos filhos*/
+    /*eixo horizontal - row*/
+    justify-content: center;
+    /*eixo vertical - row*/
+    align-items: center;
+}
+
+.area {
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+
+    /*flex-basis: 400px; /*tamanho base*/
+    /*flex-grow: 1; /*apenas para flex-basis*/
+}
+
+.item-1 {
+    background-color: red;
+    /* flex: 1; */
+    /* flex-shrink: 1; */
+    /* order: 3; */
+    align-self: flex-end;
+}
+
+.item-2 {
+    background-color: blue;
+    /* flex: 1; */
+    /* flex-shrink: 1; */
+    /* order: 2; */
+    align-self: flex-start;
+}
+
+.item-3 {
+    background-color: darkgreen;
+    /* flex: 1; */
+
+    /*Esse elemento vai reduzir duas vezes mais que os elementos com 1*/
+    /* flex-shrink: 2; */
+
+    /* order: 1; */
+}
+
+.item-4 { 
+    background-color: brown;
+    align-self: flex-end;
+}
